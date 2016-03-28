@@ -14,8 +14,8 @@ TIMESYNC="/etc/systemd/timesyncd.conf"
 ALSACONF="/etc/asound.conf"
 
 echo "## 1    ## Set edisons system configure(need reboot)"
-sleep 2
-configure_edison --setup
+#sleep 2
+#configure_edison --setup
 
 echo "## 2    ## Update opkg repositroy"
 echo "src intelgalactic http://iotdk.intel.com/repos/3.0/intelgalactic/opkg/i586/" > ${IOTKIT}
