@@ -20,10 +20,10 @@ echo "## 1    ## Set edisons system configure(need reboot)"
 #configure_edison --setup
 
 echo "## 2    ## Update opkg repositroy"
-echo "src iotkit http://iotdk.intel.com/repos/3.5/intelgalactic/opkg/i586/" > ${IOTKIT}
-echo "src/gz iotdk-all http://iotdk.intel.com/repos/3.5/iotdk/edison/all/" >> ${IOTKIT}
-echo "src/gz iotdk-core2-32 http://iotdk.intel.com/repos/3.5/iotdk/edison/core2-32/" >> ${IOTKIT}
-echo "src/gz iotdk-edison http://iotdk.intel.com/repos/3.5/iotdk/edison/edison/" >> ${IOTKIT}
+echo "src iotkit http://iotdk.intel.com/repos/3.5/intelgalactic/opkg/i586" > ${IOTKIT}
+echo "src iotdk-all http://iotdk.intel.com/repos/3.5/iotdk/edison/all" >> ${IOTKIT}
+echo "src iotdk-core2-32 http://iotdk.intel.com/repos/3.5/iotdk/edison/core2-32" >> ${IOTKIT}
+echo "src iotdk-edison http://iotdk.intel.com/repos/3.5/iotdk/edison/edison" >> ${IOTKIT}
 
 opkg update
 
